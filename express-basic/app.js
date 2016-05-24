@@ -1,9 +1,14 @@
+
 var express = require('express');
 var app = express();
 
+app.locals.title = 'My App';
+app.set('title', 'My Site');
+
 app.get('/', function (req, res) {
   res.type('text/plain');
-  res.send('Hello World! [get]');
+  // res.send('Hello World! [get]' + app.locals.title);
+  res.send('Hello World! [get]' + app.get('title'));
 });
 
 app.get('/name', function (req, res) {

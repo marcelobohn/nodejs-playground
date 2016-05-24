@@ -3,7 +3,11 @@ var app = express();
 
 app.get('/', function (req, res) {
   res.type('text/json');
-  res.send({"message":"Hello world!!"});
+  res.send({"message":"Hello world!! [get]"});
+});
+
+app.post('/', function (req, res) {
+  res.json({"message":"Hello world!! [post]"});
 });
 
 app.listen(3000, function () {
