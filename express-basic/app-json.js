@@ -2,8 +2,9 @@ var express = require('express');
 var app = express();
 
 app.get('/', function (req, res) {
-  res.type('text/json');
-  res.send({"message":"Hello world!! [get]"});
+  //res.type('text/json');
+  //res.send({"message":"Hello world!! [get]", "error":false});
+  res.json({"message":"Hello world!! [get]", "error":false});
 });
 
 app.post('/', function (req, res) {
