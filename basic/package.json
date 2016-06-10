@@ -1,0 +1,11 @@
+{
+  "name": "basic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app-html.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC"
+}
