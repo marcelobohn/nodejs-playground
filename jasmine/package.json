@@ -1,0 +1,22 @@
+{
+  "name": "first-jasmine",
+  "version": "1.0.0",
+  "description": "First app with jasmine",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine-node spec"
+  },
+  "author": "@marcelobohn",
+  "license": "ISC",
+  "repository": {
+	"type": "git",
+	"url": "https://github.com/marcelobohn/first-jasmine.git"
+  },
+  "dependencies": {
+    "express": "^4.13.4",
+    "request": "^2.72.0"
+  },
+  "devDependencies": {
+    "jasmine-node": "^1.14.5"
+  }
+}
